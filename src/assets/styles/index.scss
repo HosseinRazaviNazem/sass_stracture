@@ -1,0 +1,17 @@
+@import "./reset.scss";
+@import "./variable.scss";
+@import "./public";
+
+
+//components
+@import "components/Button/Button.component";
+@import "components/Header/Header.component";
+@import "components/Navbar/Navbar.component";
+@import "components/Slider/Slider.component";
+@import "components/Portfolio/Portfolio.component";
+@import "components/Footer/Footer.component";
+
+
+
+//pages
+@import "Pages/HomePage";
