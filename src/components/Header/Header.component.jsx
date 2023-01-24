@@ -16,7 +16,7 @@ export  const  Header= (props)=> {
             <div className="info">
                 <div className="logo">
                   <Link to="/">
-                        <img src="src/assets/images/logo/Dragon.svg" alt ="Logo" />
+                      <img src="../../assets/images/logo/DIAN.png"/>
                   </Link>
                 </div>
                 <div className="socials">

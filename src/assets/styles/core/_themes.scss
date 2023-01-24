@@ -1,0 +1,64 @@
+:root {
+  --background-url: url("");
+  --body-color: #f4f4f4;
+  --color-01: #fff;
+  --primary-color: #2a85ff;
+  --primary-color-light: #f6f5ff;
+  --primary-color-dark: #1a237e;
+  --secondary-color: #fd8e52;
+  --secondary-color-light: #fac8aa;
+  --toggle-color: #ddd;
+  --text-color-01: #707070;
+  --text-color-02: #18191a;
+  --white-color: #fff;
+}
+body {
+  &.dark {
+    --body-color: #18191a;
+    --color-01: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3a3b3c;
+    --toggle-color: #fff;
+    --text-color-01: #ccc;
+    --text-color-02: #ccc;
+  }
+  &.blue {
+    --body-color: #052e57;
+    --color-01: #071829;
+    --primary-color: #3074b8;
+    --primary-color-light: #99bee2;
+    --toggle-color: #fff;
+    --text-color-01: #ccc;
+    --text-color-02: #ccc;
+  }
+  &.dragon {
+    //--background-url: url("../images/themes/dragon.webp");
+    --body-color: #f4f4f4;
+    --color-01: rgb(255, 255, 255, 0.8);
+    --primary-color: #2a85ff;
+    --primary-color-light: #f6f5ff;
+    --primary-color-dark: #1a237e;
+    --secondary-color: #fd8e52;
+    --secondary-color-light: #fac8aa;
+    --toggle-color: #ddd;
+    --text-color-01: #18191a;
+    --text-color-02: #18191a;
+    --white-color: #fff;
+  }
+
+  &.red {
+    //--background-url: url("../images/themes/dragon.webp");
+    --body-color: #eb0a0a;
+    --color-01: rgb(255, 255, 255, 0.8);
+    --primary-color: #2a85ff;
+    --primary-color-light: #f6f5ff;
+    --primary-color-dark: #1a237e;
+    --secondary-color: #fd8e52;
+    --secondary-color-light: #fac8aa;
+    --toggle-color: #ddd;
+    --text-color-01: #18191a;
+    --text-color-02: #18191a;
+    --white-color: #fff;
+
+  }
+}

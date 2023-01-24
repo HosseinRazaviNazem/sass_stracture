@@ -1,0 +1,77 @@
+
+header {
+  width: 100%;
+  overflow: hidden;
+
+}
+.text {
+  font-size: 2rem;
+  color: (var(--graytext));
+}
+
+.container {
+
+  .hr-lines{
+    position: relative;
+    max-width: 100%;
+    margin: 3rem auto;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--gold);
+    &:before{
+      content:" ";
+      height: 5px;
+      width: 30%;
+      background: var(--gold);
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+
+    }
+    &:after{
+      content:" ";
+      height: 5px;
+      width: 30%;
+      background: var(--gold);
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+  .homeslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+.portfolios-section {
+  .cover {
+    display: flex;
+    flex-direction: row;
+  }
+  .portfolios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    gap: 1rem;
+  }
+  .membership {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}
+
+
+  }
+

@@ -1,8 +1,8 @@
 import { AddTodoAPI, CheckTodoAPI, DeleteTodoAPI, FilterTodoAPI, GetAllTodosAPI } from 'apis';
 import { Button, Input, Loading, Todo } from 'components';
 import { Fragment, useEffect, useState } from 'react';
-import './assets/styles/app.scss';
 import { ToastContainer, toast } from 'react-toastify';
+import "assets/styles/index.scss";
 import 'react-toastify/dist/ReactToastify.css';
 import HomePage from "./pages/HomePage";
 import {AppRouting} from "./routes/index.routes";

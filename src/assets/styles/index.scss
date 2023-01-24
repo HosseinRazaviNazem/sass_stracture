@@ -1,17 +1,25 @@
-@import "./reset.scss";
-@import "./variable.scss";
-@import "./public";
+
+// Abstract files
+@import "abstracts/mixins/_index-mixin";
+@import "./abstracts/variables/variables";
+@import "abstracts/spacing/_spacing";
+
+// Core files
+@import "./core/reset";
+@import "./fonts/IranYekan/fonts.IranYekan";
+@import "./core/base";
+@import "./core/themes";
 
 
 //components
+@import "app";
 @import "components/Button/Button.component";
 @import "components/Header/Header.component";
-@import "components/Navbar/Navbar.component";
+@import "./components/Navbar/Navbar.component";
 @import "components/Slider/Slider.component";
 @import "components/Portfolio/Portfolio.component";
+@import "components/Search/Search";
 @import "components/Footer/Footer.component";
-
-
 
 //pages
 @import "Pages/HomePage";

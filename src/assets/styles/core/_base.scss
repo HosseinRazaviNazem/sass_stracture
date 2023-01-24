@@ -1,0 +1,161 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: $body-color;
+
+  //font-family: $font-family-vazir;
+  font-family: IranYekan;
+  font-size: 1.8rem;
+  color: $text-color-02;
+
+}
+
+img {
+  width: 100%;
+}
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+}
+
+.container {
+  max-width: 115rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  @include tablet {
+    padding: 24px;
+  }
+  background: $color-01;
+  border-radius: 8px;
+  margin: 5px;
+
+  .description {
+    font-size: 14px;
+    font-weight: 600;
+    color: $text-color-01;
+    padding-bottom: 10px;
+  }
+  &-header {
+    display: flex;
+    position: relative;
+    padding-left: 24px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &-title {
+    font-size: larger;
+    font-weight: 600;
+    user-select: none;
+    padding-top: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 16px;
+      height: 32px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      border-radius: 4px;
+      background: #ffbc99;
+    }
+  }
+}
+::selection {
+  background-color: $primary-color-dark;
+  color: $toggle-color;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $text-color-02;
+  &:visited {
+    color: $text-color-02;
+  }
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+//Remove button/submit Style
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+// Change Scrollbar Style
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(209, 206, 206);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(26, 35, 126, 0.4);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(26, 35, 126, 0.4);
+}
+// Change Scrollbar Style
+
+// Change Inputs Placeholder Color
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9a9fa5;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9a9fa5;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9a9fa5;
+}

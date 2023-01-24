@@ -1,13 +1,15 @@
 import React from 'react';
+import {MyBtn} from "../Buttton/Button.component";
+import PropTypes from "prop-types";
 
- export const  Portfolio = (props)=> {
+export const  Portfolio = ({mainTitle , btnTitle ,})=> {
     return (
         <div className="deck">
             <div className="card hovercard">
                 <div className="front face">
-                    <h2>Hover</h2>
+                    <h2>{mainTitle}</h2>
                     <div className="bottext">
-                        <h3>6000kr</h3>
+                        <MyBtn bRadius="10" type="primary" title={btnTitle}/>
                     </div>
                 </div>
                 <div className="back face">
@@ -19,11 +21,17 @@ import React from 'react';
                         <li>Mobilvenlig</li>
                     </ul>
                     <div className="botprice">
-                        <h3>6000kr</h3>
+                       <MyBtn bRadius="10" type="primary" title="بیشتر بدانید"/>
                     </div>
                 </div>
             </div>
         </div>
     );
+    Portfolio.propTypes = {
+        mainTitle: PropTypes.string.isRequired,
+        btnTitle: PropTypes.string.isRequired,
+
+
+    };
 }
 
